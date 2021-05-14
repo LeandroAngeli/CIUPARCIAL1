@@ -1,0 +1,36 @@
+body{
+  background-color: #4db6ac
+}
+
+h1{
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+button {
+  background-color: #e0f2f1;
+  font-size: 16px;
+  margin:auto;
+  margin-top: 16px;
+  display:block;
+}
+
+form{
+  position: absolute;
+  left:50% ;
+  margin-top: 16px
+  }
+
+
+input{
+  margin-top: 16px;
+  margin-bottom: 16px;
+
+}
+
+header {
+  padding: 20px;
+  text-align: left;
+  background-color:white;
+  font-size: 16px;
+}

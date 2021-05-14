@@ -1,0 +1,60 @@
+<html>
+ <head>
+    <style>
+   
+    .column {
+    float: left;
+    width: 50%;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    </style>
+ 
+ 
+ <title>Parcial 1</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  
+ </head>
+ <body>
+    <div class="row">
+        <div class="column">
+            <img src="ImagePharma.jpg" alt="Pharmacy" width="260" height="260"> 
+
+        </div>
+        <div class="column">
+            <h1> Bienvenidos</h1>
+
+  <form name="formulario" action="paginaPrincipal.html" method="post" 
+  onsubmit="validacion(userName,contrasenia);">
+  
+
+  <div class="container">
+    <label for="userName"><b>Usuario</b></label>
+    <br>
+    <input  type="text" id = "userName" placeholder="Ingrese usuario" name="userName" required>
+
+    <br>
+    <label for="contrasenia"><b>Password</b></label>
+    <br>
+    <input type="contraseña" id = "contrasenia" placeholder="Ingrese su contraseña" name="contrasenia" required>
+
+
+    <br>
+    <button type="submit">Ingresar</button>
+    
+
+
+  </div>
+
+</form>
+        </div>
+    </div>
+ <script src="script.js">
+  
+   </script>
+  </body
+</html>

@@ -1,0 +1,103 @@
+<html>
+ <head>
+    <style>
+   .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 16px 16px;
+  grid-template-areas:
+    ". ."
+    ". ."
+    ". .";
+  
+}
+
+    </style>
+ 
+ 
+ <title>Parcial 1</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  
+  
+  <header>
+    <h5>Usuario en linea:</h5>
+    <p id="usuario_actual"></p>
+   
+  <button type="button" id="logout" onclick="logout()">Cerrar Sesion</button>
+  
+  
+  </header>
+
+
+
+
+ </head>
+ <body>
+
+   <div class="grid-container">
+  <div class="grid-item" style="background: grey"; >
+  <p style="text-align:center;" >
+  <img src="15discount.png" alt="15descuento"> 
+    </p></div>
+
+  
+  
+  <div class="grid-item"style="background: grey";><p style="color:white;">
+    Doctor Strange <br>
+    Av. Constantinopla 3468 <br>
+    28/03<br>
+    
+    </p></div>
+  
+  
+  <div class="grid-item" style="background: grey"; >
+  <p style="text-align:center;" >
+  <img src="20discount.png" alt="20descuento"> 
+    </p></div>
+  
+  
+  <div class="grid-item"style="background: grey";><p style="color:white;">
+
+    Doctor Fate <br>
+    Baker Street 616 <br>
+    12/12<br>
+
+  </p>
+  
+  </div>
+  
+  
+  <div class="grid-item" style="background: grey"; >
+  <p style="text-align:center;" >
+  <img src="30discount.png" alt="30descuento"> 
+    </p></div>
+  
+  
+  <div class="grid-item"style="background: grey";><p style="color:white;">Doctor Voodoo <br>
+    Av. Siempreviva 123 <br>
+    29/02<br>
+  </p>
+  
+  </div>
+
+</div>
+
+
+
+
+
+ <script>
+   var uName = sessionStorage.getItem("nombre")
+   document.getElementById("usuario_actual").textContent = uName;
+
+  function logout(){
+  sessionStorage.removeItem("nombre");
+  sessionStorage.clear();
+  location.href = "index.html";
+} 
+  
+ </script>
+
+  </body
+</html>
